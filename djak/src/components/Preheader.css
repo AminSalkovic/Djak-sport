@@ -9,6 +9,13 @@
     align-items: center;
     justify-content:center;
 }
+.slika1{
+    background-image: url("https://www.djaksport.com/Images/Djak/v3/djakLogoWhiteMobile.png");
+    width: 40px;
+    height: 25px;
+    background-size: cover;
+    display: none;
+}
 .pre-header ul li{
     font-family: sans-serif;
     font-size: 12px;
@@ -24,4 +31,5 @@
 }
 .pre-header i{
     margin-right: 3px;
+    font-size: 14px;
 }
