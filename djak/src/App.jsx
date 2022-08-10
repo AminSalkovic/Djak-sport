@@ -1,14 +1,16 @@
-
+import React,{useState} from 'react'
 import './App.css';
-import Header from './components/Header';
-import Preheader from './components/Preheader';
-
-const App=()=> {
-
+import Kard from './components/Kard';
+import axios from 'axios'
+const App=()=> {  
+   
+  
+  
   return (
-    <div className="App">
-      <Preheader/>
-     <Header/>
+    <div className="app">
+  
+          <Kard/>
+    
     </div>
   );
 }
