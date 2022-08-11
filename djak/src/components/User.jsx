@@ -5,17 +5,15 @@ export default function User() {
     let value=''
     useEffect(()=>{
         Axios.get("https://jsonplaceholder.typicode.com/todos")
-       .then((res)=> {
-         setData(res.data)
-        console.log(res.data)
-    })
+       .then((res)=> setData(res.data))
     },[])
   return (
     <div>
           {data&& data.map((el)=>{
             return(
                 <div>
-                    <p key={el[1].id}>{el.title}</p>
+                    <p key={el.id}>{el.title}</p>
+                  
                 </div>
             )
           })}
