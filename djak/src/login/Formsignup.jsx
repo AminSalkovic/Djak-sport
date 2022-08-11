@@ -1,9 +1,10 @@
 import React from 'react'
 import Useform from './Useform'
 import ValidateInfo from './ValidateInfo'
+import './Form.css'
 
-const Formsignup = () => {
-    const{handleChange,values,handleSubmit,errors}=Useform(ValidateInfo)
+const Formsignup = ({submitForm}) => {
+    const{handleChange,values,handleSubmit,errors}=Useform(submitForm,ValidateInfo)
   return (
     <div className="form-content-right">
         <form className="form" onSubmit={handleSubmit}>
@@ -23,6 +24,7 @@ const Formsignup = () => {
                     placeholder='Eneter your email' 
                     value={values.email}
                      onChange={handleChange}/>
+                     {errors.email && <p>{errors.email}</p>}
                 </label>
             </div>
             <div className="form-inputs">
@@ -31,6 +33,7 @@ const Formsignup = () => {
                      placeholder='Eneter your password' 
                      value={values.password}
                      onChange={handleChange}/>
+                     {errors.password && <p>{errors.password}</p>}
                 </label>
             </div>
             <div className="form-inputs">
@@ -40,6 +43,7 @@ const Formsignup = () => {
                      value={values.password2}
                      onChange={handleChange}
                      />
+                     {errors.password2 && <p>{errors.password2}</p>}
                 </label>
             </div>
             <button className='form-input-btn' type='submit'>Sign in</button>
