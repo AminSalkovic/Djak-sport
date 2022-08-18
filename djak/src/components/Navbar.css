@@ -16,7 +16,7 @@
 
 .span1{
     font-size: 10px;
-    margin-right: 100px;
+    margin-right: 150px;
 }
 .nav-items{
     cursor: pointer;
@@ -30,6 +30,7 @@
 }
 .nav-links {
     color: #fff;
+    font-size: 13px;
     text-decoration: none;
 }
 span{

@@ -4,9 +4,6 @@ import './Dropdown.css';
 import { Link } from 'react-router-dom';
 
 function Dropdown() {
-  const [click, setClick] = useState(false);
-
-
 
   return (
     <div className='dropdown'>
@@ -15,6 +12,11 @@ function Dropdown() {
               <input type="email" placeholder='Email'/>
               <input type="password" placeholder='Lozinka' />
              </form>
+               <li className='drop-list'>
+                  <Link to='/zaboravljena-sifra' className='dropdown-link'>
+                       Zaboravili ste lozinku?  
+                  </Link>
+               </li>
              <button type='submit'>LOGIN</button>
     </div>
   );
