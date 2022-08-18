@@ -20,12 +20,13 @@ const Navbar = () => {
                <span className='span1'> BESPLATNA DOSTAVA ZA PORUDŽBINE PREKO 6000 DINARA</span>
                 </Link>
             </li>
-              <li className='nav-items' 
+              <li className='nav-items' onClick={()=>setDropdown(!dropdown)}
               onMouseLeave={()=> setDropdown(false)}
               onMouseEnter={()=> {setDropdown(true)}}>
                 
                 <FaIcons.FaUserAlt/>
                   <span>Prijava</span>
+                 {dropdown && <Dropdown/>}
               </li>
             <li className='nav-items'>
                 <Link to='/Registracija' className='nav-links'>
@@ -39,7 +40,6 @@ const Navbar = () => {
             </li>
          </ul>
     </nav>
-    {dropdown && <Dropdown/>}
     </>
   )
 }

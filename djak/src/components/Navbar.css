@@ -19,6 +19,7 @@
     margin-right: 100px;
 }
 .nav-items{
+    cursor: pointer;
     padding: 9px 25px;
     display: flex;
     align-items: center;
