@@ -1,5 +1,30 @@
 .navbar2{
     width: 100%;
-    height: 53px;
+    height: 45px;
     background-color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar2-ul{
+    display: flex;
+    list-style: none;
+    color: #fff;
+}
+.nav2-items{
+    padding: 13px 30px;
+}
+.nav2-items:hover{
+    background-color: var(--hover);
+}
+.outlet-items:hover{
+    background-color: var(--hover);
+}
+.nav2-link{
+ text-decoration: none;
+ color: #fff;
+}
+.outlet-items{
+    padding: 13px 30px;
+    background-color: blue;
 }

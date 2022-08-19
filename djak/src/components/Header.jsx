@@ -9,7 +9,7 @@ const Header = () => {
     <div className='header'>
        <div className="image"> </div>
        <div className='search-input'>
-       <input type='search' placeholder='Pretraga' />
+       <input type='text' placeholder='Pretraga' />
        <FiIcons.FiSearch className='icon'/>
        </div>
 

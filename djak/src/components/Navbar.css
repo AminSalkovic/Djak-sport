@@ -26,7 +26,7 @@
 }
 
 .nav-item1,.nav-items:hover{
-    background-color: rgb(212, 17, 17);
+    background-color: var(--hover);
 }
 .nav-links {
     color: #fff;
