@@ -8,6 +8,7 @@
 :root{
   --primary:rgb(235, 11, 29);
   --hover: rgb(212, 17, 17);
+  --liste: rgb(99, 93, 93);
 }
 /* *{
   padding: 0%;

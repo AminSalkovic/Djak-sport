@@ -6,10 +6,15 @@
     align-items: center;
     justify-content: center;
 }
+.footer h1{
+    font-size: 15px;
+    margin-top: 3px;
+    margin-left: 3px;
+    color: rgb(58, 52, 52);
+}
 .div1{
-    width: 20%;
-    border: 1px solid black;
-    height: 85%;
+    width: 15%;
+    height: 90%;
     display: flex;
     justify-content: center;
 }
@@ -19,23 +24,67 @@
     font-size: 300px;
     background-image: url("https://www.djaksport.com/images/djak/v3/djaklogo20180423.svg");
 }
-.div2{
-    width: 20%;
-    border: 1px solid black;
-    height: 80%;
+.div2,.div3,.div4{
+    width: 18%;
+    height: 90%;
 }
-.div3{
-    width: 20%;
-    border: 1px solid black;
-    height: 80%;
-}
-.div4{
-    width: 20%;
-    border: 1px solid black;
-    height: 80%;
-}
+
 .div5{
-    width: 20%;
-    border: 1px solid black;
-    height: 80%;
+    width: 22%;
+    height: 90%;
+}
+.footer-ul{
+    list-style: none;
+}
+.footer-list{
+  margin-top: 8px; 
+  font-size: 14px;
+
+}
+.footer-list a{
+  text-decoration: none;
+  color:var(--liste); 
+}
+.footer-list a:hover{
+    color: red;
+}
+.drustvene-mreze{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.facebook{
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    background-image: url("https://www.djaksport.com/images/djak/v3/facebook.png");
+}
+.instagram{
+    width: 45px;
+    height: 40px;
+    background-position: center;
+    background-image: url("https://www.djaksport.com/images/djak/v3/instagram.png");
+}
+.email{
+    width: 40px;
+    height: 50px;
+    background-position: center;
+    background-image: url("https://www.djaksport.com/images/djak/v3/envelope.png")
+}
+.linkedin{
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    background-image: url("https://www.djaksport.com/images/djak/v3/linkedin.png")
+}
+.prijava{
+    display: flex;
+    padding: 5px ;
+}
+.prijavise{
+    width: 280px;
+    height: 120px;
+    background-position: center;
+    background-size: 270px;
+    background-image: url("https://www.djaksport.com/images/djak/v3/signup.png")
 }
