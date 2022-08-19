@@ -13,6 +13,8 @@
 }
 .nav2-items{
     padding: 13px 30px;
+    display: flex;
+    align-items: center;
 }
 .nav2-items:hover{
     background-color: var(--hover);

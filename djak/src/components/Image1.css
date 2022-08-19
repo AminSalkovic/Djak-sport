@@ -1,0 +1,13 @@
+.image1{
+    width: 100%;
+    height: 600px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image1-image{
+    width: 95%;
+    height: 90%;
+    background-image: url("https://www.zemunpark.rs/wp-content/uploads/2017/11/Djak-02_Radnje.jpg");
+}

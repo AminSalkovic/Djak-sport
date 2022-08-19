@@ -1,8 +1,13 @@
-import React from 'react'
+import React,{useState} from 'react'
 import {Link} from 'react-router-dom'
+import * as AiIcons from 'react-icons/ai'
+import Sportovidropdown from './Sportovidropdown'
 import './Navbar2.css'
 
  const Navbar2 = () => {
+  const[dropdown,setDropdown]=useState(false)
+
+
   return (
     <div className='navbar2'>
       <ul className="navbar2-ul">
@@ -12,8 +17,14 @@ import './Navbar2.css'
         <li className="nav2-items">
           <Link to='Trcanje' className='nav2-link'>Trcanje</Link>
         </li>
-         <li className="nav2-items">
-          <Link to='Sportovi' className='nav2-link'>Sportovi</Link>
+         <li className="nav2-items"
+         onMouseEnter={()=>setDropdown(true)}
+         onMouseLeave={()=>setDropdown(false)}
+         >
+          <Link to='Sportovi' className='nav2-link'>Sportovi
+          <AiIcons.AiOutlineCaretDown/>
+          </Link>
+          {dropdown && <Sportovidropdown/>}
         </li>
         <li className="nav2-items">
           <Link to='Muskarci' className='nav2-link'>Muskarci</Link>
@@ -34,7 +45,7 @@ import './Navbar2.css'
           <Link to='Djak&sport-kartica' className='nav2-link'>Djak & Spot kartica</Link>
         </li>
         <li className="outlet-items" >
-          <Link to='Outlet' className='nav2-link'>Outlet</Link>
+          <Link to='/' className='nav2-link'>Outlet</Link>
         </li>
       </ul>
     </div>
